@@ -1,0 +1,37 @@
+import java.util.Random;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        calcScore();
+    }
+
+        public static void calcScore() {
+            Random number = new Random();
+            int score = 0;
+            int diceOne = number.nextInt(6) + 1;
+            int diceTwo = number.nextInt(6) + 1;
+            int diceThree = number.nextInt(6) + 1;
+            int diceFour = number.nextInt(6) + 1;
+            int diceFive = number.nextInt(6) + 1;
+
+            if (diceOne == 5) {
+                score += 5;
+            }
+            if (diceTwo == 5) {
+                score += 5;
+            }
+            if (diceThree == 5) {
+                score += 5;
+            }
+            if (diceFour == 5) {
+                score += 5;
+            }
+            if (diceFive == 5) {
+                score += 5;
+            }
+
+            System.out.println("Youre score is " + score);
+        }
+    }
